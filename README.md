@@ -1,7 +1,7 @@
 # codehub-cli
-CodeHub Command-Line Interface Program Written in Python.
+Simple codehub command-line client program uses API services. Start editing the `main.py` file then try to make your queries and run it up. There are two classes `GetSnippet` and `PushSnippet`. Just need to create an object.
 
-# Getting Snippet
+##### Get a Snippet ⇒ `main.py`
 ```python
 from components import GetSnippet
 
@@ -10,7 +10,7 @@ data = snippet.get()                # Data receiving
 print(data)
 ```
 
-## Pushing Snippet
+##### Push a Snippet ⇒ `main.py`
 ```python
 from components import PushSnippet
 
@@ -22,3 +22,6 @@ try:
 except Exception as e:
     print('Pushing failed for..\n', e)
 ```
+
+### Develop it
+Make changes in the main file or carry up the classes in your program. Don't forget the [GPL](https://github.com/lnxpy/codehub-cli/blob/master/LICENSE). Develop it for free :)
