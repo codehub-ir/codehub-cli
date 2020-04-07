@@ -1,5 +1,5 @@
 # codehub-cli
-Simple codehub command-line client program uses API services. Start editing the `main.py` file then try to make your queries and run it up. There are two classes `GetSnippet` and `PushSnippet`. Just need to create an object.
+Simple [CodeHub](https://github.com/lnxpy/codehub) command-line client program uses API services. Start editing the `main.py` file then try to make your queries and run it up. There are two classes `GetSnippet` and `PushSnippet`. Just need to create an object.
 
 ##### Get a Snippet ⇒ `main.py`
 ```python
