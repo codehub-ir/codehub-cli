@@ -5,7 +5,6 @@ config = {
     'api_version': 'v1'
 }
 
-
 class GetSnippet:
 
     def __init__(self, SID):
@@ -36,5 +35,4 @@ class PushSnippet:
             'language': self.language,
         }
         r = requests.post(url, json=structure)
-
         return r.json()
