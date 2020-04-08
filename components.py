@@ -5,6 +5,7 @@ config = {
     'api_version': 'v1'
 }
 
+
 class GetSnippet:
 
     def __init__(self, SID):
@@ -30,9 +31,19 @@ class PushSnippet:
                       config['api_version'] + '/snippet/')
         structure = {
             'title': self.title,
-            'details': self.details,
+            'detail': self.details,
             'script': self.script,
             'language': self.language,
         }
         r = requests.post(url, json=structure)
         return r.json()
+
+
+class Language:
+    python = 'python'
+    java = 'java'
+    javascript = 'js'
+    swift = 'swift'
+    csharp = 'csharp'
+    c = 'c'
+    php = 'php'
