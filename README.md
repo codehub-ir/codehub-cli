@@ -23,5 +23,18 @@ except Exception as e:
     print('Pushing failed for..\n', e)
 ```
 
+##### Language
+You can also use `Language` class to use the default languages of the program. You may use a language is not listed in the `Language` class so write it by yourself. Other languages will be added soon.
+```python
+from components import PushSnippet, Language
+
+lang = Language()
+snippet = PushSnippet(..., lang.python) # Or PushSnippet(..., 'Prolog')
+snippet.push()
+```
+<p align="center">
+    <img src="https://github.com/lnxpy/CodeHub-cli/blob/master/git_components/lang.png">
+</p>
+
 ### Develop it
 Make changes in the main file or carry up the classes in your program. Don't forget the [GPL](https://github.com/lnxpy/codehub-cli/blob/master/LICENSE). Develop it for free :)
