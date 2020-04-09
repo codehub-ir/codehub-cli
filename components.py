@@ -45,3 +45,4 @@ class Language:
     csharp = 'csharp'
     c = 'c'
     php = 'php'
+    go = 'go'
