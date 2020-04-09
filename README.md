@@ -37,4 +37,4 @@ snippet.push()
 </p>
 
 ### Develop it
-Make changes in the main file or carry up the classes in your program. Don't forget the [GPL](https://github.com/lnxpy/codehub-cli/blob/master/LICENSE). Develop it for free :)
+Make changes in the main file or carry up the classes in your program. Don't forget the [GPL-3.0](https://github.com/lnxpy/codehub-cli/blob/master/LICENSE). Develop it for free :)
