@@ -20,10 +20,11 @@ class GetSnippet:
 
 class PushSnippet:
 
-    def __init__(self, title, details, script, language):
+    def __init__(self, title, script, language, details='', error=''):
         self.title = title
         self.details = details
         self.script = script
+        self.error = error
         self.language = language
 
     def push(self):
@@ -31,6 +32,7 @@ class PushSnippet:
             'title': self.title,
             'detail': self.details,
             'script': self.script,
+            'error': self.error,
             'language': self.language,
         }
         r = requests.post(URL, json=structure)
