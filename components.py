@@ -5,6 +5,8 @@ config = {
     'api_version': 'v1'
 }
 
+URL = config['main_address'] + config['api_version'] + '/snippet/'
+
 
 class GetSnippet:
 
@@ -12,9 +14,7 @@ class GetSnippet:
         self.SID = SID
 
     def get(self):
-        url = '%s%s' % (config['main_address'] +
-                        config['api_version'] + '/snippet/', self.SID)
-        r = requests.get(url)
+        r = requests.get(URL + self.SID)
         return r.json()
 
 
@@ -27,15 +27,13 @@ class PushSnippet:
         self.language = language
 
     def push(self):
-        url = '%s' % (config['main_address'] +
-                      config['api_version'] + '/snippet/')
         structure = {
             'title': self.title,
             'detail': self.details,
             'script': self.script,
             'language': self.language,
         }
-        r = requests.post(url, json=structure)
+        r = requests.post(URL, json=structure)
         return r.json()
 
 
