@@ -23,6 +23,22 @@ except Exception as e:
     print('Pushing failed for..\n', e)
 ```
 
+#### Optionals
+There are some fields you are able to leave them empty. `detail`and `error` fields are the optional parameters you may not want to fill them up, so you use the exact keywords to give other parameters the values you want.
+```python
+from components import GetSnippet, PushSnippet, Language
+
+configs = {
+    'title': 'TITLE',
+    # 'details': 'DETAILS',  OPTIONAL PARAMETER
+    'script': 'SCRIPT',
+    # 'error': 'ERROR',      OPTIONAL PARAMETER
+    'language': 'go',
+}
+
+snippet = PushSnippet(**configs).push()
+print(snippet)
+```
 ##### Language
 You can also use `Language` class to use the default languages of the program. You may use a language is not listed in the `Language` class so write it by yourself. Other languages will be added soon.
 ```python
