@@ -1,3 +1,3 @@
-from components import GetSnippet, PushSnippet, Language
+# from components import GetSnippet, PushSnippet, Language
 
-# Here you code..
+# Here your code..
