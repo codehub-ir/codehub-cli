@@ -40,7 +40,7 @@ configs = {
 snippet = PushSnippet(**configs).push()
 print(snippet)
 ```
-##### Language
+##### Custom Language Model
 You can also use `Language` class to use the default languages of the program. You might use a language which is not listed in the `Language` class, so write it by yourself. **Up to 500 languages are available now.**
 ```python
 from components import PushSnippet, Language
