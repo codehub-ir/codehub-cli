@@ -6,7 +6,7 @@ Simple [CodeHub](https://github.com/lnxpy/codehub) command-line client program u
 from components import GetSnippet
 
 snippet = GetSnippet('<SID>')       # GetSnippet Obj
-data = snippet.get()                # Data receiving
+data = snippet.get()                # Data retrievement
 print(data)
 ```
 
@@ -31,9 +31,9 @@ from components import GetSnippet, PushSnippet, Language
 
 configs = {
     'title': 'TITLE',
-#   'details': 'DETAILS',  OPTIONAL PARAMETER
+#   'details': 'DETAILS',  Optional
     'script': 'SCRIPT',
-#   'error': 'ERROR',      OPTIONAL PARAMETER
+#   'error': 'ERROR',      Optional
     'language': 'go',
 }
 
