@@ -46,7 +46,7 @@ You can also use `Language` class to use the default languages of the program. Y
 from components import PushSnippet, Language
 
 lang = Language()
-snippet = PushSnippet(..., lang.python) # Or PushSnippet(..., 'Prolog')
+snippet = PushSnippet(..., lang.python) # Or PushSnippet(..., 'python')
 snippet.push()
 ```
 <p align="center">
