@@ -12,15 +12,16 @@ print(data)
 
 ##### Push a Snippet ⇒ `main.py`
 ```python
-from components import PushSnippet
+from components import GetSnippet, PushSnippet, Language
 
-snippet = PushSnippet('TITL', 'DETAILS', 'SCRIPT', 'python') # PushSnippet Obj
+configs = {
+    'title': 'TITLE',
+    'script': 'SCRIPT',
+    'language': 'go',
+}
 
-try:
-    result = snippet.push()                                  # Pushing process
-    print('Snippet Pushed Successfully!\n' + result['link'])
-except Exception as e:
-    print('Pushing Failed..\n', e)
+snippet = PushSnippet(**configs).push()
+print(snippet)
 ```
 
 #### Optionals
