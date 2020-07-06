@@ -1,4 +1,4 @@
-# codehub-cli
+# CodeHub-CLI
 Simple [CodeHub](https://github.com/lnxpy/codehub) command-line client program uses API services. Start editing the `main.py` file, then try to make your queries and run them up.
 
 ##### Get a Snippet ⇒ `main.py`
